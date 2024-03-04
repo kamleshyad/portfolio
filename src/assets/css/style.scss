@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: normal 18px 'Jost', sans-serif;
+    color: #202020;
+    line-height: normal;
+}
+
+/* jost-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/jost-v15-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/jost-v15-latin-500.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/jost-v15-latin-600.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/jost-v15-latin-700.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/jost-v15-latin-800.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* saira-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/saira-v20-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* saira-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/saira-v20-latin-500.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+$color-white : #fff;
+$color-black : #202020;
+$color-yellow : #ff9a00;
+$color-blue : #7691da;
+$color-lightblue : #eff4f9;
+$color-lightyellow : #fbf3e7;
+$color-orange : #e38557;
+
+$secondary-font : 'Saira',
+sans-serif;
+
+.container {
+    max-width: Min(1290px, 96%);
+    width: auto;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.primaryBtn {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-white;
+    font-weight: 500;
+    padding: 15px;
+    background: $color-blue;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+    text-align: center;
+    min-width: 130px;
+}
+
+a.primaryBtn:hover {
+    background: $color-yellow;
+}
+
+a.secondaryBtn {
+    display: inline-block;
+    color: $color-white;
+    background: $color-yellow;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    min-width: 170px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    transition: all 0.2s linear;
+    padding: 13px 20px;
+    box-sizing: border-box;
+}
+
+a.secondaryBtn:hover {
+    background: $color-blue;
+}
+
+.headersec {
+    padding: 15px 0;
+    background: $color-white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.headerright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.topnav ul {
+    display: flex;
+    gap: 30px;
+    font-size: 0;
+
+    a {
+        font-size: 18px;
+        color: $color-black;
+        font-weight: 500;
+        line-height: 26px;
+        transition: all 0.3s linear;
+        letter-spacing: 0.6px;
+    }
+
+    a:hover {
+        color: $color-yellow;
+    }
+}
+
+.bannersec {
+    padding: 130px 0;
+    background: $color-lightyellow;
+
+    .bannercaption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        .bannerleft h2 {
+            font-size: 60px;
+            line-height: 60px;
+            color: $color-black;
+            font-weight: 500;
+            font-family: $secondary-font;
+
+            span {
+                display: block;
+                color: $color-orange;
+                margin-top: 25px;
+            }
+
+        }
+
+        .bannerleft h3 {
+            font-size: 50px;
+            color: $color-black;
+            font-weight: 500;
+            line-height: 60px;
+            font-family: $secondary-font;
+            margin-top: 25px;
+        }
+
+        .bannerbtn {
+            margin-top: 40px;
+
+            ul {
+                display: flex;
+                gap: 20px;
+            }
+        }
+
+        .bannerright {
+            width: 600px;
+            text-align: center;
+            animation: bannerimg 1.5s 0.9s ease-in-out infinite alternate;
+
+            // animation name, duration, delay, iteration-count, direction
+        }
+
+        @keyframes bannerimg {
+            from {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+        }
+    }
+}
+
+.footersec {
+    background: $color-lightyellow;
+    padding: 50px 0;
+    text-align: center;
+
+    h3 {
+        font-size: 48px;
+        font-weight: 500;
+        font-family: $secondary-font;
+        line-height: 48px;
+        color: $color-orange;
+        letter-spacing: 2px;
+    }
+
+    .contactbox {
+        background: $color-lightblue;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px auto 0;
+        max-width: Min(1024px, 96%);
+        box-sizing: border-box;
+        width: auto;
+
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        h4 span {
+            display: block;
+        }
+    }
+
+    .footerbox {
+        display: grid;
+        grid-template-columns: auto 1fr 0.8fr;
+        gap: 40px;
+        max-width: Min(1024px, 96%);
+        width: auto;
+        margin: 70px auto 0;
+        text-align: left;
+
+        h5 {
+            font-size: 24px;
+            font-weight: 600;
+            color: $color-orange;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            font-size: 18px;
+            color: $color-black;
+            font-weight: 500;
+            line-height: 22px;
+            transition: all 0.3s linear;
+
+            &:hover {
+                color: #7691da;
+            }
+        }
+
+        .footermid ul {
+            display: flex;
+            gap: 20px;
+            flex-flow: column nowrap;
+
+            li {
+                padding-left: 50px;
+                position: relative !important;
+            }
+
+            li:nth-child(1) {
+                content: '';
+                position: absolute;
+                top: calc(50% -10px);
+                width: 50px;
+                height: 50px;
+                background: url(/images/phone-icon.png) no-repeat;
+                left: 0;
+            }
+
+        }
+    }
+}
+
+.copyrightsec {
+    padding: 30px 0;
+    text-align: center;
+}
