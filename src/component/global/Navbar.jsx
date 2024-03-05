@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     return (
@@ -17,7 +18,7 @@ const Navbar = () => {
                     <NavLink to="/#projects" className={({ isActive }) => (isActive ? 'active' : '')}>Projects</NavLink>
                 </li>
                 <li>
-                    <NavLink to="#contact" className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink>
+                    <HashLink smooth to='/#contact' >Contact</HashLink>
                 </li>
             </ul>
         </div>
